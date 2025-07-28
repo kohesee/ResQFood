@@ -4,6 +4,7 @@ plugins {
     //plugins for firebase
     id("com.google.dagger.hilt.android")
     id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
     kotlin("kapt")
     alias(libs.plugins.kotlin.serialization)
 }
@@ -150,7 +151,6 @@ dependencies {
     //navigation
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
-
     //pager
     implementation (libs.accompanist.pager)
 }
